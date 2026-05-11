@@ -70,7 +70,7 @@ describe('PluginManager Test Cases', () => {
   });
 
   test('No Update available for Plugin', async () => {
-    // No updates available for "app-catalog" plugin
+    // No updates available for "flux" plugin
     await PluginManager.update('@headlamp-k8s/flux', tempDir, '', mockProgressCallback);
     expect(mockProgressCallback).toHaveBeenCalledWith({
       type: 'error',
